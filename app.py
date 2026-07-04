@@ -32,7 +32,7 @@ vector_store = Chroma.from_documents(
     persist_directory = "./chroma_db"
 )
 #Defining a test question
-user_question = "When is my next reimbursement to be enhanced ?"
+user_question = "How much money can I get for my home office setup?"
 print(f"User Question : {user_question}")
 #Searching the database for the 2 closest matching text chunks
 matching_chunks = vector_store.similarity_search(user_question,k = 2)
